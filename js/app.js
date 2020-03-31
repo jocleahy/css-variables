@@ -4,7 +4,9 @@
 const ctrls = document.querySelectorAll('.controls input');
 
 function handleUpdate() {
-    console.log(this.value);
+    // need to add px to blur value but not base
+    const suffix = (this.name == 'blur') ? 'px' : '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
 }
 
 

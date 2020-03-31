@@ -1,3 +1,8 @@
+:root {
+    --base: #ffc600;
+    --blur: 5px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,8 +20,14 @@ body {
     margin-bottom: 30px;
 }
 
-img {
+.frame {
+    background-color: var(--base);
     width: 800px;
-    background-color: #ffc600;
-    padding: 20px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    padding: 40px;
+    filter: blur(var(--blur));
 }

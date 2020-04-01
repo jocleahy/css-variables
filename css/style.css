@@ -20,6 +20,10 @@ body {
     margin-bottom: 30px;
 }
 
+.hl {
+    color: var(--base);
+}
+
 .frame {
     background-color: var(--base);
     width: 800px;
